@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .amazon-link:hover{
+                color: red;
+            }
+            .nike-text{
+                font-weight: bold;
+                font-size: 30px;
+            }
+            .stock-rate{
+                color: green;
+                font-weight: bold;
+                font-size: 20;
+            }
+            .delivery-text{
+                font-size: 18;
+            }
+            .add-button{
+                background-color: yellow;
+                height: 40px;
+                width: 130px;
+                border: none;
+                border-radius: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                margin-right: 8px;
+            }
+            .buy-button{
+                background-color: rgba(224, 77, 9, 0.925);
+                height: 40px;
+                width: 140px;
+                border: none;
+                border-radius: 20px;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            .add-button:hover{
+                background-color: rgb(211, 34, 247);
+                box-shadow: 0px 6px 8px rgba(25, 26, 25, 0.747);
+                color:rgb(243, 238, 238);
+                
+            }
+            .add-button:active{
+                opacity:0.5;
+                color:rgba(74, 128, 12, 0.747);
+            }
+            .buy-button:hover{
+                background-color: rgb(177, 25, 131);
+                box-shadow: 0px 6px 8px rgb(4, 187, 35);
+                color: rgb(4, 187, 35);
+            }
+            .buy-button:active{
+                opacity: 0.5;
+                color:red;
+                background-color: rgb(12, 16, 253);
+            }
+        
+        </style>
+    </head>
+    <body>
+        <fieldset style="height: 250px; width: 400px;">
+            <div>
+                <a class="amazon-link" href="https://www.youtube.com/" > Back to Amazon</a>
+            </div>
+            <div>
+                <p class="nike-text">Nike Black Running Shoes</p>
+                <p class="stock-rate">$39-in stock.</p>
+                <p class="delivery-text">Free delivery tomorrow.</p>
+            </div>
+            <div>
+                <button class="add-button">Add to Cart</button>
+                <button class="buy-button ">Buy now</button>
+        </fieldset>
+    </body>
+</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button{
+                height: 40px;
+                width: 120px;
+                font-size: 11px;
+                border-color: white;
+                border-radius: 4px;
+                border-width: 1px;
+                background-color: rgb(211, 248, 124);
+                margin-top: 8px;
+                color: white;
+            }
+            .textcheckbox{
+                 font-size: 10px;
+                text-align: center;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 20px 300px ;
+                gap: 80px;
+                padding:none;
+            }
+            .grid-container > div {
+                margin-right: 50px;
+            }
+            .item1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .background{
+                color: white; 
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <form class="background" >
+            <fieldset style="height: 500px; width: 550px; background-color: rgb(211, 248, 124);">
+                <div >
+                    <h1 style="margin-bottom: 0px;">Contact form</h1>
+                </div><br> 
+                <div  style="font-size: 12px;">
+                    <div style="margin-bottom: 50px;" >
+                        <summary>Please fill in your information and we'll be sending your order in no time.</summary>
+                    </div>
+                    <div style="font-size: 11px;">
+                        <lable style="margin-right: 46px; " >Your Name</lable>
+                        <input type="text" name="" value="" placeholder="First Name">
+                        <input type="text" name="" value="" placeholder="Last Name">
+                    </div><br>
+                    <div><label style="margin-right: 40px;">Your Email</label>
+                        <input type="email" name="" value="" placeholder="Email"  size="46px">
+                    </div><br>
+                    <div><lable style="margin-right: 58px;" >Phone*</lable>
+                        <input type="text" name="" placeholder="###" size="12px">
+                        <input type="text" name="" placeholder="###" size="12px">
+                        <input type="text" name="" placeholder="###" size="11px">
+                    </div><br>
+                    <div> 
+                        <label style="margin-right: 8px;">Message Subject*</label>
+                        <input type="text" name="" placeholder="other" size="46px">
+                    </div><br>
+                    <div class="grid-container">
+                        <div class="item1"><label> Message*</label></div>
+                        <div class="item2"><textarea name="message" rows="7" cols="46" ></textarea></div>  
+                    </div><br>
+                    <div>
+                        <label style="margin-right: 30px;">Verification*</label>
+                         <input type="checkbox" name="">
+                         <text>I'm not robot</text>
+                    </div><hr>
+                    <div >
+                        <button class="button">SUBMIT FORM</button>
+                    </div><br>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
+

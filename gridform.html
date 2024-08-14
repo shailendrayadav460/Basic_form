@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button{
+                height: 40px;
+                width: 120px;
+                font-size: 11px;
+                border-color: white;
+                border-radius: 4px;
+                border-width: 1px;
+                background-color:   #ec24db;
+                margin-top: 8px;
+                color: white;
+            }
+            .textcheckbox{
+                 font-size: 10px;
+                text-align: center;
+            }
+            .grid-containe{
+                display: grid;
+                grid-template-columns: 18px 50px ;
+                gap: 80px;
+                padding: none;
+            }
+            .item1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .grid-container{
+                display: grid;
+                background-color: rgb(38, 233, 31);
+                color: white; 
+                height: 500px;
+                width: 800px;
+                padding: 150px; 
+                padding-left: 300px;
+                padding-top: 40px;
+                padding-right: 200px;
+            }
+            .grid-items{
+                background-color: #ec24db;
+                padding: 50px;
+                border: 1px solid rgba(0, 0, 0, 0.6);
+                height:530px;
+                width: 600px;
+                
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <form class="grid-container" >
+            <fieldset class="grid-items">
+                <div >
+                    <h1 style="margin-bottom: 0px;">Contact form</h1>
+                </div><br> 
+                <div  style="font-size: 12px;">
+                    <div style="margin-bottom: 50px;" >
+                        <summary>Please fill in your information and we'll be sending your order in no time.</summary>
+                    </div>
+                    <div style="font-size: 11px;">
+                        <lable style="margin-right: 46px; " >Your Name</lable>
+                        <input type="text" name="" value="" placeholder="First Name">
+                        <input type="text" name="" value="" placeholder="Last Name">
+                    </div><br>
+                    <div><label style="margin-right: 40px;">Your Email</label>
+                        <input type="email" name="" value="" placeholder="Email"  size="46px">
+                    </div><br>
+                    <div><lable style="margin-right: 58px;" >Phone*</lable>
+                        <input type="text" name="" placeholder="###" size="12px">
+                        <input type="text" name="" placeholder="###" size="12px">
+                        <input type="text" name="" placeholder="###" size="11px">
+                    </div><br>
+                    <div> 
+                        <label style="margin-right: 8px;">Message Subject*</label>
+                        <input type="text" name="" placeholder="other" size="46px">
+                    </div><br>
+                    <div class="grid-containe">
+                        <div class="item1"><label> Message*</label></div>
+                        <div class="item2"><textarea name="message" rows="6" cols="47" ></textarea></div>  
+                    </div><br>
+                    <div>
+                        <label style="margin-right: 30px;">Verification*</label>
+                         <input type="checkbox" name="">
+                         <text>I'm not robot</text>
+                    </div><hr>
+                    <div >
+                        <button class="button">SUBMIT FORM</button>
+                    </div><br>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
